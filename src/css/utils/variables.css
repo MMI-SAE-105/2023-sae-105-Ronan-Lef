@@ -1,7 +1,16 @@
+:root{
 /*Couleurs principales*/
---blue: #30354B;
---lightGrey: #E6E9EE;
+--blue: #30354b;
+--lightGrey: #e6e9ee;
 /*Couleurs secondaires*/
---blackText: #39382D;
---blueGrey: #858BA5;
---background: #E8E8E8;
+--blackText: #39382d;
+--blueGrey: #858ba5;
+--background: #e8e8e8;
+
+/*Espaces*/
+--space1x: 10px;
+--space2x: 20px;
+--space3x: 30px;
+--space4x: 40px;
+--space5x: 50px;
+}
