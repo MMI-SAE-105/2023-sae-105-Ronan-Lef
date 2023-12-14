@@ -1,1 +1,10 @@
- @import url('')
+@import url("");
+/*Règles générales*/
+@import "base/main.css";
+
+/*Variables*/
+@import "utils/variables.css";
+
+/*Layout*/
+@import "layout/header.css";
+@import "layout/footer.css";
