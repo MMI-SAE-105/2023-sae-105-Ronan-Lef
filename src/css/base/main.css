@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: var(--sans-serif);
   font-size: var(--text-md);
@@ -15,38 +20,12 @@ header {
   background-color: #30354b;
   color: #e6e9ee;
   text-align: left;
-  padding: 20px;
+  padding: 1rem;
   margin: 0%;
 }
 
-.intro {
-  width: 375px;
-  height: 679px;
-  flex-shrink: 0;
-}
-
-footer {
-  background-color: #30354b;
-  color: #fff;
-  text-align: left;
-  border: ;
-}
-
-.footer__localisation {
-  list-style: none;
-}
-
-.reseaux__icons {
-  list-style: none;
-  display: flex;
-  flex-shrink: 0;
-  align-items: flex-start;
-}
-
-.bottom__text {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  width: 47px;
-  height: 19px;
+h1 {
+  font-family: var(--serif);
+  
+  margin: 0;
 }

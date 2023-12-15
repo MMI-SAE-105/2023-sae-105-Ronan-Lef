@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/style.css">
   <title>Coop Himmelb(l)au Exposition</title>
-  
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
   <header>
     <h1>Coop</h1>
     <h1>Himmelb(l)au</h1>
+    <button
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn">
+        <img src="/public/icons/menu-icon.svg" alt="Menu icon">
+    </button>
   </header>
 
-  <section class="intro">
-    <img 
-    src="public/img/beulah-propeller.webp"
-    width="375" height="679" viewBox="0 0 375 679">
-  </img>
-</section>
+  <div class="img__accueil">
+    <img src="public/img/beulah-propeller.webp" alt="Beulah Propeller">
+  </div>
 
     <h2>L'Architecture, réinventée</h2>
     <p>Plongez dans l'univers audacieux et visionnaire du groupe autrichien Coop Himmelb(l)au, repoussant constamment les frontières de l'architecture depuis sa fondation en 1968. </p>
@@ -50,8 +53,6 @@
       <tr>
         <td>Gratuit pour les personnes suivantes</td>
     </table>
-
-
   <h5> Moins de 13 ans - Etudiants - Laissez-passer annuel - Carte Icom - Carte de presse - Carte d'invalidité - Fondation Cartier Pass*<br>
 *Sous conditions</h5>
 
