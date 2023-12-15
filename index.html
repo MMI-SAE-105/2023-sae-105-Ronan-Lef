@@ -14,11 +14,12 @@
     <button
         aria-controls="mainNav"
         @click="menuIsOpen = ! menuIsOpen"
-        class="header_menuBtn">
+        class="header__menuBtn">
         <img src="/public/icons/menu-icon.svg" alt="Menu icon">
     </button>
   </header>
 
+  <main>
   <div class="carrousel__accueil"
   x-data="{
     hrefCourant:'#ecran-1',
@@ -83,42 +84,59 @@
       </div>
       <ul class="carrousel_liste-liens">
         <li>
-          <a href="Beulah Propeller"
+          <a href="/public/img/beulah-propeller.webp" 
             :class="{'actif':hrefCourant==='Beulah Propeller'}"
             @click="hrefCourant='Beulah Propeller'"
             class="carrousel_lien"
             >Beulah Propeller</a>
         </li>
         <li>
-          <a href="Central Bank"
+          <a href="/public/img/central-bank.webp"
             :class="{'actif':hrefCourant==='Central Bank'}"
             @click="hrefCourant='Central Bank'"
             class="carrousel_lien"
             >Central Bank</a>
         </li>
         <li>
-          <a href="55th Street"
+          <a href="/public/img/55th-street.webp"
             :class="{'actif':hrefCourant==='55th Street'}"
             @click="hrefCourant='55th Street'"
             class="carrousel_lien"
             >55th Street</a>
         </li>
-        <li><a href="Confluences Museum" 
+        <li><a href="/public/img/confluences-museum.webp" 
           :class="{'actif':hrefCourant==='Confluences Museum'}"
           @click="hrefCourant='Confluences Museum'"
           class="carrousel_lien">Confluences Musueum</a>
         </li>
-        <li><a href="BMW Welt" 
+        <li><a href="/public/img/bmw-welt.webp" 
           :class="{'actif':hrefCourant==='BMW Welt'}"
           @click="hrefCourant='BMW Welt'"
           class="carousel_lien">BMW Welt</a>
         </li>
       </ul>
     </div>
+<div class="header__infos">
+  <h2>Exposition Architecturale</h2>
+  <h3>13 avril - 23 juin 2024</h3>
+  <button class="header__btn">Réserver mon billet</button>
+  <h4>Fondation Cartier
+    <br>261 Bd Raspail
+    <br>75014 Paris
+  </h4>
+    <table class="horaires">
+      <tr>
+        <td>Ouvert du <strong>mardi</strong> au <strong>dimanche</strong></td>
+        <td>11H-20H</td>
+      </tr>
+      <tr>
+        <td><strong>Nocturnes</strong> tous les <strong>mardis</strong></td>
+        <td>11H-<strong>22H</strong></td>
+    </table>
   </div>
-
+</div>
     <h2>L'Architecture, réinventée</h2>
-    <p>Plongez dans l'univers audacieux et visionnaire du groupe autrichien Coop Himmelb(l)au, repoussant constamment les frontières de l'architecture depuis sa fondation en 1968. </p>
+    <p>Plongez dans l'univers audacieux et visionnaire du groupe autrichien <a href="/profils.html">Coop Himmelb(l)au</a>, repoussant constamment les frontières de l'architecture depuis sa fondation en 1968. </p>
     <h2>Une technique impressionnante</h2>
 <p>Leur approche unique, alliant créativité débridée et rigueur technique, a façonné certains des édifices les plus emblématiques du monde moderne.</p>
 
@@ -126,7 +144,6 @@
 <p>Du 13 avril au 23 juin 2024, la Fondation Cartier, nichée au cœur de Paris, accueille une exposition immersive qui met en lumière les créations avant-gardistes de Coop Himmelb(l)au. Explorez des maquettes impressionnantes, des croquis visionnaires et des photographies captivantes qui dévoilent l'évolution de leur approche novatrice.</p>
 
   <h2>Tarifs</h2>
-  <div class="flex-container">
     <table class="tarifs">
       <tr>
         <td>Plein tarif</td>
@@ -152,8 +169,9 @@
 
 <footer>
 <h1>Coop Himmelb(l)au</h1>
-<h3 class="footer__title">MENU</h3>
-<h3 class="footer__title">CONTACT</h3>
+<h3 class="footer__title">
+  MENU</h3>
+<h3 class="footer__title"><a href="/contact.html">CONTACT</h3>
 <h3 class="footer__title">NOUS TROUVER</h3>
 <ul class="footer__localisation">
   <li>Fondation Cartier</li>
@@ -172,15 +190,14 @@
     <img src="/public/icons/tiktok.svg" alt="Tiktok"></li>
   <li>
     <img src="/public/icons/youtube.svg" alt="Youtube"></li>
-  </li>
   </ul>
   <ul class="bottom__text">
     <li>mentions légales</li>
     <li>contacts</li>
     <li>à propos de nous</li>
   </ul>
-  <h5>Ce site est réalisé dans le cadre d'un exercice <br> pour le BUT MMI de Montbéliard</h5>
+  <h5>Ce site est réalisé dans le cadre d'un exercice <br> pour le <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html">BUT MMI de Montbéliard</h5>
 </footer>
-
+</main>
 </body>
 </html>

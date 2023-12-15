@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Coop Himmelb(l)au Exposition</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <h1>Coop</h1>
+    <h1>Himmelb(l)au</h1>
+    <button
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
+        <img src="/public/icons/menu-icon.svg" alt="Menu icon">
+    </button>
+  </header>
+  <main>
+<div>
+            <img
+              class="team__img"
+              src="/public/img/zaha-hadid.webp"
+              alt="Zaha Hadid" />
+            <img
+              class="team__img"
+              src="/public/img/peter-eisenman.webp"
+              alt="Peter Eisenman" />
+              <img class="team__img" src="/public/img/daniel-libeskind.webp" alt="Daniel Libeskind" />
+              <img class="team__img" src="/public/img/frank-gehry.webp" alt="Frank Gehry" />
+              </div>
+              </main>
+<footer>
+<h1>Coop Himmelb(l)au</h1>
+<h3 class="footer__title">
+  MENU</h3>
+<h3 class="footer__title">CONTACT</h3>
+<h3 class="footer__title">NOUS TROUVER</h3>
+<ul class="footer__localisation">
+  <li>Fondation Cartier</li>
+  <li>261 Bd Raspali</li>
+  <li>75014 Paris</li>
+  <li>coophimmelblau@expo.com</li>
+  </ul>
+<h3 class="footer__title">RESEAUX</h3>
+<ul class="reseaux__icons">
+  <li>
+    <img src="public/icons/instagram.svg" alt="Instagram">
+  </li>
+  <li>
+    <img src="/public/icons/x.svg" alt="X"></li>
+  <li>
+    <img src="/public/icons/tiktok.svg" alt="Tiktok"></li>
+  <li>
+    <img src="/public/icons/youtube.svg" alt="Youtube"></li>
+  </ul>
+  <ul class="bottom__text">
+    <li>mentions légales</li>
+    <li>contacts</li>
+    <li>à propos de nous</li>
+  </ul>
+  <h5>Ce site est réalisé dans le cadre d'un exercice <br> pour le <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html">BUT MMI de Montbéliard</h5>
+</footer>
+</body>
+</html>
