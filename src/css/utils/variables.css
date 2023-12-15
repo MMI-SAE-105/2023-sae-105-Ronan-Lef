@@ -13,4 +13,8 @@
   --space3x: 30px;
   --space4x: 40px;
   --space5x: 50px;
+
+  /*Polices*/
+  --sans-serif: "Mulish", sans-serif;
+  --serif: "Urbanist", sans-serif;
 }

@@ -3,58 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
   <title>Coop Himmelb(l)au Exposition</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    header {
-      background-color: #30354B;
-      color: #fff;
-      text-align: left;
-      padding: 20px;
-    }
-
-    intro {
-width: 375px;
-height: 679px;
-flex-shrink: 0;
-    }
-
-    footer {
-      background-color: #30354B;
-      color: #fff;
-      text-align: left;
-      padding: 20px;
-    }
-
-    .footer__localisation {
-      list-style: none;
-    }
-
-    .reseaux__icons {
-      list-style: none;
-      display: flex;
-      flex-shrink: 0;
-      align-items: flex-start;
-    }
-
-    .petit__texte {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      width: 47px;
-height: 19px;
-    }
-
-  </style>
+  
 </head>
 <body>
-
   <header>
     <h1>Coop</h1>
     <h1>Himmelb(l)au</h1>
@@ -75,18 +28,32 @@ height: 19px;
 <h2>Une invitation à l'imagination infinie</h2>
 <p>Du 13 avril au 23 juin 2024, la Fondation Cartier, nichée au cœur de Paris, accueille une exposition immersive qui met en lumière les créations avant-gardistes de Coop Himmelb(l)au. Explorez des maquettes impressionnantes, des croquis visionnaires et des photographies captivantes qui dévoilent l'évolution de leur approche novatrice.</p>
 
+  <h2>Tarifs</h2>
+  <div class="flex-container">
+<h4 class="liste__groupes"> Plein tarif <br> Tarif réduit <br> Réduction 13 - 25 ans <br> Fondation Cartier Pass <br> Gratuit pour les personnes suivantes</h4>
+<ul class="liste__prix">
+  <li>11€</li>
+  <li>7,50€</li>
+  <li>5€</li>
+  <li>18€-50€</li>
+  </h4>
+  </ul>
+  </div>
+  <h5> Moins de 13 ans - Etudiants - Laissez-passer annuel - Carte Icom - Carte de presse - Carte d'invalidité - Fondation Cartier Pass*<br>
+*Sous conditions</h5>
+
 <footer>
 <h1>Coop Himmelb(l)au</h1>
-<h3>MENU</h3>
-<h3>CONTACT</h3>
-<h3>NOUS TROUVER</h3>
+<h3 class="footer__title">MENU</h3>
+<h3 class="footer__title">CONTACT</h3>
+<h3 class="footer__title">NOUS TROUVER</h3>
 <ul class="footer__localisation">
   <li>Fondation Cartier</li>
   <li>261 Bd Raspali</li>
   <li>75014 Paris</li>
   <li>coophimmelblau@expo.com</li>
   </ul>
-<h3>RESEAUX</h3>
+<h3 class="footer__title">RESEAUX</h3>
 <ul class="reseaux__icons">
   <li>
     <img src="public/icons/instagram.svg" alt="Instagram">
@@ -99,11 +66,12 @@ height: 19px;
     <img src="/public/icons/youtube.svg" alt="Youtube"></li>
   </li>
   </ul>
-  <ul class="petit__texte">
+  <ul class="bottom__text">
     <li>mentions légales</li>
     <li>contacts</li>
     <li>à propos de nous</li>
   </ul>
+  <h5>Ce site est réalisé dans le cadre d'un exercice <br> pour le BUT MMI de Montbéliard</h5>
 </footer>
 
 </body>
