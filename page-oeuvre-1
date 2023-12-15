@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
   <title>Coop Himmelb(l)au Exposition</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header>
+  <header>
     <h1><a href="/index.html">Coop</h1>
     <h1>Himmelb(l)au</a></h1>
     <button
@@ -19,26 +19,7 @@
     </button>
   </header>
   <main>
-    <p class="bottom__text">*Les champs marqué d’un astérisque doivent être remplis</p>
-    <form action="">
-                    <fieldset>
-                        <legend>Prénom*</legend>
-                        <input type="text" name="name" id="name" placeholder="Votre prénom">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Nom</legend>
-                        <input type="text" name="name" id="name" placeholder="Votre nom">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Adresse mail*</legend>
-                        <input type="email" name="email" id="email" placeholder="exemple.adresse@mail.fr">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Message*</legend>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    </fieldset>
-                    <input type="envoi" value="Envoyer" class="form__btn btn">
-                </form>
+
   </main>
   <footer>
 <h1>Coop Himmelb(l)au</h1>
@@ -72,5 +53,4 @@
   <h5>Ce site est réalisé dans le cadre d'un exercice <br> pour le <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html">BUT MMI de Montbéliard</h5>
 </footer>
 </body>
-
 </html>
