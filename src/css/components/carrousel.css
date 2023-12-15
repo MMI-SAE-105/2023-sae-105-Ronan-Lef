@@ -1,11 +1,12 @@
 
       .carrousel__accueil {
+        box-sizing: border-box;
         max-width: 100%;
         height: auto;
       }
       .carrousel_parent-ecrans {
         display: flex;
-        width: auto;
+        width: 100%;
         overflow-x: scroll;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
