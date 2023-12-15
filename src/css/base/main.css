@@ -24,6 +24,11 @@ header {
   margin: 0%;
 }
 
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Makes the link color the same as the surrounding text */
+}
+
 h1 {
   font-family: var(--serif);
   margin: 0;
