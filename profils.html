@@ -8,9 +8,9 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-<header>
-    <h1>Coop</h1>
-    <h1>Himmelb(l)au</h1>
+  <header>
+    <h1><a href="/index.html">Coop</h1>
+    <h1>Himmelb(l)au</a></h1>
     <button
         aria-controls="mainNav"
         @click="menuIsOpen = ! menuIsOpen"
@@ -19,24 +19,58 @@
     </button>
   </header>
   <main>
-<div>
-            <img
-              class="team__img"
-              src="/public/img/zaha-hadid.webp"
-              alt="Zaha Hadid" />
-            <img
-              class="team__img"
-              src="/public/img/peter-eisenman.webp"
-              alt="Peter Eisenman" />
-              <img class="team__img" src="/public/img/daniel-libeskind.webp" alt="Daniel Libeskind" />
-              <img class="team__img" src="/public/img/frank-gehry.webp" alt="Frank Gehry" />
-              </div>
+  <body x-data="{showImg:''}">
+    <a href="index.html"></a>
+    <h1 class="page__title">Découvrez l'équipe</h1>
+    <h2>Coop Himmelb(l)au : Un Héritage Architectural Guidé par les Pionniers</h2>
+    <p>Coop Himmelb(l)au, le groupe architectural autrichien fondé en 1968, émerge comme une force novatrice sous la direction de ses membres visionnaires : Wolf D. Prix, Helmut Swiczinsky, et Michael Holzer. Cette alliance a façonné un parcours audacieux dans le monde de l'architecture, laissant une empreinte distinctive grâce à une créativité sans limites.</p>
+    <h2>Reprise du groupe, un nouveau regard</h2>
+    <p>Cet ensemble dynamique se place désomais aux côtés d'autres pionniers de l'architecture contemporaine tels que Zaha Hadid, Peter Eisenman, Daniel Libeskind, et Frank Gehry. 
+Ces figures emblématiques, chacune avec sa vision distinctive, ont repoussé les frontières de la créativité architecturale et ont laissé une marque indélébile sur le paysage urbain mondial.</p>
+<h1>L’équipe de Coop Himmelb(l)au</h1>
+
+    </p>
+    <img
+      src="/public/img/zaha-hadid.webp"
+      alt="Zaha Hadid"
+      @click="showImg='" />
+      <h3>Zaha Hadid</h3>
+      <p>Reconnue pour ses formes fluides et organiques, Zaha Hadid a révolutionné l'architecture contemporaine. Des œuvres comme le Guangzhou Opera House en Chine témoignent de son génie créatif.</p>
+    <img
+      src="/public/img/peter-eisenman.webp"
+      alt="Peter Eisenman"
+      @click="showImg='" />
+      <h3>Peter Eisenman</h3>
+      <p>Maître de la déconstruction, Peter Eisenman a influencé la scène architecturale mondiale. Le Mémorial de l'Holocauste à Berlin incarne sa vision provocatrice et mémorable.</p>
+    <img
+      src="/public/img/daniel-libeskind.webp"
+      alt="Daniel Libeskind"
+      @click="showImg='" />
+      <h3>Daniel Libeskind</h3>
+      <p>Renommé pour son approche narrative, Daniel Libeskind a conçu des édifices emblématiques tels que le Musée juif de Berlin, exprimant des récits complexes à travers son architecture.</p>
+    <img
+      src="/public/img/frank-gehry.webp"
+      alt="Frank Gehry"
+      @click="showImg='" />
+      <h3>Frank Gehry</h3>
+      <p>Virtuose du design, Frank Gehry est célèbre pour des structures emblématiques comme le Musée Guggenheim de Bilbao, où des formes organiques et des matériaux innovants se conjuguent en une symphonie architecturale.</p>
+      <h4>L'héritage de Coop Himmelb(l)au, combiné à la contribution exceptionnelle de ces architectes, forme un chapitre essentiel de l'histoire architecturale contemporaine, témoignant d'une exploration infinie de l'audace et de l'innovation.</h4>
+    <div
+      x-show="showImg"
+      class="overlay"
+      @click="showImg=null"
+      @keyup.escape.window="showImg=null">
+      <figure>
+        <img :src="showImg" alt="image" />
+      </figure>
+    </div>
+  </body>
               </main>
 <footer>
 <h1>Coop Himmelb(l)au</h1>
 <h3 class="footer__title">
   MENU</h3>
-<h3 class="footer__title">CONTACT</h3>
+<h3 class="footer__title"><a href="/contact.html">CONTACT</h3>
 <h3 class="footer__title">NOUS TROUVER</h3>
 <ul class="footer__localisation">
   <li>Fondation Cartier</li>
@@ -58,7 +92,7 @@
   </ul>
   <ul class="bottom__text">
     <li>mentions légales</li>
-    <li>contacts</li>
+    <li><a href="/contact.html">contacts</a></li>
     <li>à propos de nous</li>
   </ul>
   <h5>Ce site est réalisé dans le cadre d'un exercice <br> pour le <a href="http://www.iut-bm.univ-fcomte.fr/pages/fr/dpt-mmi---actualites-18542.html">BUT MMI de Montbéliard</h5>
