@@ -11,13 +11,19 @@
   <header>
     <h1><a href="/index.html">Coop</h1>
     <h1>Himmelb(l)au</a></h1>
-    <button
-        aria-controls="mainNav"
-        @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-        <img src="/public/icons/menu-icon.svg" alt="Menu icon">
+    <button id="toggleButton">Menu</button>
     </button>
   </header>
+
+  <nav id="menu">
+        <ul>
+            <li><a href="/index.html">Informations</a></li>
+            <li><a href="/profils.html">Qui sont-ils ?</a></li>
+            <li><a href="/oeuvres-populaires.html">Oeuvres Populaires</a></li>
+            <li><a href="/chronologie.html">Chronologie</a></li>
+            <li><a href="/contact.html">Nous contacter</a></li>
+        </ul>
+    </nav>
 
   <main>
   <div class="carrousel__accueil"
