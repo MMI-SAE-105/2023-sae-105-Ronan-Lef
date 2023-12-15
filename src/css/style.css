@@ -10,3 +10,6 @@
 /*Layout*/
 @import "layout/header.css";
 @import "layout/footer.css";
+
+/*Composants*/
+@import "components/tarifs.css";
