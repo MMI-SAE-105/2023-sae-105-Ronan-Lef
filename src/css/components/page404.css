@@ -1,0 +1,14 @@
+ .erreur {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex ;
+        }
+
+        h1 {
+            
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
